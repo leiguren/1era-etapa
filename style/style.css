@@ -9,10 +9,11 @@
 }
 
 body{
+    width: 100%;
     background-image: url(../assets/images/imagenfondomarmol.PNG);
     background-attachment: fixed;
     background-position: center;
-
+    justify-content: center;
 }
 
 header{
@@ -26,6 +27,7 @@ main{
     margin-bottom: 50px;
 }
 
+
 /* Header  todas las paginas*/
 
 .encabezado{
@@ -38,6 +40,7 @@ main{
     box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 40%);
     max-width: 100%;
     margin: 0 auto;
+
 }
 .encabezado__logo{
     width: 60px;
@@ -99,7 +102,16 @@ main{
 
 .principal__menu-items.active a, .principal__menu-items a:hover{
     text-decoration: underline double;
+    
 }
+/* 
+/* .principal__menu-items:hover{
+    background-color: black;
+    border-radius: 4px;
+} */
+/* .principal__menu-items a:hover{
+    color: whitesmoke;
+} */
 
 /* Main Index portada */
 
@@ -117,7 +129,7 @@ main{
     padding: 0px 0px;
     margin: 0px 0px;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-size: cover;
     animation-name: portadaanimation;
     animation-duration: 30s;
@@ -129,14 +141,84 @@ main{
 .principal__titulo-2{
     display: flex;
     justify-content: center;
-    background-color: #7d7d7d;
-    margin-top: 20px;
-    font-size: 40px;
+    margin-top: 30px;
+    padding: 8px 0px;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 30px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    
+    background-image: linear-gradient(to right, grey, whitesmoke 55% 45%);
+}
+
+.destacados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin-top: 40px;
+    column-gap: 10%;
+    padding: 10px 40px;
+    max-width: 100%;
+}
+
+.destacados__productos{
+    width: 100%;     
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 40px;
+    cursor: default;
+    justify-content: center;
+}
+
+.destacados__productos-images{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+      
+}
+
+.destacados__productos-titulo{
+    font-size: 22px;
+    text-align: center;
+    margin: 10px;
+}
+
+.destacados__productos-boton{
+    background-color: darkgray;
+    display: inline-block;
+    width: 60%;
+    margin-inline: 20%;
+    margin-top: 10px;
+    height: auto;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
     
 }
+
+
+.destacados__productos-boton a{
+    display: inline-block;
+    text-decoration: none;
+    border-color: white;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.destacados__productos-boton a:hover{
+    text-decoration: underline double;
+}
+
+.destacados__productos-boton:hover{
+    background-color: #474747;
+    font-weight: bold;
+    cursor: pointer;
+}
+
     
 
 /* main productos */
@@ -145,24 +227,36 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 4%;
-    row-gap: 2%;
+    column-gap: 5%;
+    padding: 10px 40px;
     max-width: 100%;
-    max-height: 100%;
 }
  
 .product__productos{
-    width: 100%;
-    height: 100%;     
+    width: 100%;     
     background-color: #f1f1f1;
     border-radius: 10px;
     display: inline-block;
-    box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 60%);
+    box-shadow: 0 50px 50px 0px rgba(106, 106, 106, 0.3);
+    margin-bottom: 40px;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.product__productos:hover{
+    width: 100%;     
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 60%);
+    margin-bottom: 40px;
+    transform: translateY(-4%);
+
 }
 
 .product__productos-images{
     width: 100%;
-    height: 350px;
+    height: 250px;
     border-radius: 10px 10px 0px 0px;
       
 }
@@ -202,6 +296,16 @@ main{
     padding: 0px;
 }
 
+.product__productos-boton a:hover{
+    text-decoration: underline double;
+}
+
+.product__productos-boton:hover{
+    background-color: #474747;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* main como comprar */
 
 .comocomprar__titulo{
@@ -217,7 +321,7 @@ main{
 
 .comocomprar__1{
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 
@@ -231,10 +335,7 @@ main{
     grid-template-rows: repeat(3, 1fr);
     border-top: 2px solid #696969;
     border-bottom: 2px solid #696969 ;
-    margin-top: 0px;
-    padding: 0px 5px;
     width: 100%;
-    height: 150px;
 }
 
 .pie__titulo{
@@ -304,17 +405,19 @@ main{
 
 /* Main Formulario */
 
+
 .formulario{
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     width: 400px;
-    background-color: #d7d7d7;
+    background-image: linear-gradient(#505050, #d3d3d3);
     padding: 20px;
     margin: auto;
     color: white;
     font-weight: bold;
-    border-radius: 15px;
+    border: 10px solid rgb(199, 199, 199);
+    border-radius: 3px;
     box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 60%);
 
 }

@@ -7,7 +7,8 @@
     <title>Dulcinea Deco Home</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/mediaq.css">
+    <link rel="stylesheet" href="./style/mediaq.css" />
+    <link rel="stylesheet" href="./style/animate.css" />
 
 </head>
 
@@ -62,6 +63,37 @@
 
         <h5 class="principal__titulo-2"> Destacados de la semana </h5>
 
+        <div class="destacados wow animate__backInRight" data-wow-duration="4s">
+
+            <article class="destacados__productos">
+                <img class="destacados__productos-images" src="./assets/images/mantas/mantasrusticas/rusticarayadagris.jpg" alt="Rustica rayada gris">
+                <h4 class="destacados__productos-titulo">Manta Rustica Rayada Gris</h4>
+                <button class="destacados__productos-boton">
+                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 3.190</a>
+                </button>
+
+            </article>
+
+            <article class="destacados__productos">
+                <img class="destacados__productos-images" src="./assets/images/mantas/nordicas/nordicamediahebra.PNG" alt="Rustica rayada gris">
+                <h4 class="destacados__productos-titulo">Manta Nordica Media Hebra </h4>
+                <button class="destacados__productos-boton">
+                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 2.900</a>
+                </button>
+
+            </article>
+
+            <article class="destacados__productos">
+                <img class="destacados__productos-images" src="./assets/images/velas/velavidrio.jpg" alt="Rustica rayada gris">
+                <h4 class="destacados__productos-titulo">Velas Aromaticas de Soja</h4>
+                <button class="destacados__productos-boton">
+                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 890</a>
+                </button>
+
+            </article>
+
+        </div>
+
     </main>
 
     <footer class="pie">
@@ -111,6 +143,11 @@
         </div>
 
     </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
 </body>
 
