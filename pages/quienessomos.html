@@ -8,92 +8,119 @@
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/mediaq.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
     
 </head>
 
 <body>
 
-    <header>
+<header class="encabezado fixed-top">
 
-        <section class="encabezado">
-
+        <div>
+    
             <a class="encabezado__logo" href="../index.html">
                 <img class="encabezado__logo" src="../assets/images/logo.JPG" alt="Logo Dulcinea" width="150px" height="150px" />
             </a>
-
-            <div>
-                <a class="encabezado__link active" href="">INGRESAR</a>
-                <a class="encabezado__link active" href="../pages/contacto.html">REGISTRARSE</a>
-            </div>
+        </div>
+    
+        <div class="navbar navbar-expand-xxl">
+    
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    
+                    <div class="navbar-nav">     
+                        <a class="nav-link active encabezado__link nav-link " href="">INGRESAR</a>
+                        <a class="nav-link encabezado__link nav-link " href="./pages/contacto.html">REGISTRARSE</a>
+                    </div>
+                </div>
+            </div> 
+    
+        </div>
        
-        </section>
- 
-
     </header>
 
-    <main class="principal" >
+    <main class="principal">
 
         <div>
 
-            <h4 class="principal__titulo">DULCINEA DECO HOME</h4>
+            <h4 class="principal__titulo display-2-sm display-3-none" >DULCINEA DECO HOME</h4>
         
-            <nav class="principal__menu" >
+            <nav class="principal__menu navbar navbar-expand-lg" >
     
-                <ul >
-                    <li class="principal__menu-items qs active">
-                        <a href="../pages/quienessomos.html">QUIENES SOMOS</a>
+                <ul class="navbar-nav container" >
+
+                    <li class="principal__menu-items qs nav-item">
+                        <a class="nav-link active" aria-current="page" href="./quienessomos.html">QUIENES SOMOS</a>
                     </li>
 
-                    <li class="principal__menu-items">
-                        <a href="../pages/productos.html">PRODUCTOS</a>
+                     <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./productos.html">PRODUCTOS</a>
                     </li>
 
-                    <li class="principal__menu-items">
-                        <a href="../pages/comocomprar.html">COMO COMPRAR</a>
-                    </li>
+                    <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./comocomprar.html">COMO COMPRAR</a>
+                     </li>
 
-                    <li class="principal__menu-items">
-                        <a href="../pages/contacto.html">CONTACTOS</a>
+                     <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTOS</a>
                     </li>
-
                 </ul>
-
             </nav>
-
         </div>
 
         <h1 class="titulo">NUESTRA HISTORIA</h1>
 
-        <section class="historia">
+        <section class="historia container">
 
-    
-                <div class="historia__nosotros">
+            <div class="row historia__nosotros">
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     
                     <img class="historia__nosotros-imagen" src="../assets/images/quienessomos.JPG" alt="quienes somos" >
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur delectus rerum illum impedit, quam atque modi, a nostrum fugit dignissimos voluptate cupiditate veniam nihil repellat! Iste at culpa saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sequi libero in doloribus vero necessitatibus eaque? Voluptas incidunt delectus minus est quia. Hic, facilis sapiente eaque numquam odit maiores quae?</p>
+                
+                </div>
+            </div>
+
+                <div class=" row historia__dh">
+
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur delectus rerum illum impedit, quam atque modi, a nostrum fugit dignissimos voluptate cupiditate veniam nihil repellat! Iste at culpa saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sequi libero in doloribus vero necessitatibus eaque? Voluptas incidunt delectus minus est quia. Hic, facilis sapiente eaque numquam odit maiores quae?</p>
+                    
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <img class="historia__dh-imagen" src="../assets/images/fotodulcinea.JPG" alt="quienes somos" >
+
+                    </div>
+
+                </div>
+                
+            <div class="row historia__nosotros">
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    
+                    <img class="historia__nosotros-imagen" src="../assets/images/quienessomos.JPG" alt="quienes somos" >
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12">
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur delectus rerum illum impedit, quam atque modi, a nostrum fugit dignissimos voluptate cupiditate veniam nihil repellat! Iste at culpa saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sequi libero in doloribus vero necessitatibus eaque? Voluptas incidunt delectus minus est quia. Hic, facilis sapiente eaque numquam odit maiores quae?</p>
                 
                 </div>
 
-                <div class="historia__dh">
-                    
-                    <img class="historia__dh-imagen" src="../assets/images/fotodulcinea.JPG" alt="quienes somos" >
-   
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur delectus rerum illum impedit, quam atque modi, a nostrum fugit dignissimos voluptate cupiditate veniam nihil repellat! Iste at culpa saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sequi libero in doloribus vero necessitatibus eaque? Voluptas incidunt delectus minus est quia. Hic, facilis sapiente eaque numquam odit maiores quae?</p>
-                   
-                   </div>
-
-                <div class="historia__ellos">
-                    
-                    <img class="historia__ellos-imagen" src="../assets/images/quienessomos.JPG" alt="quienes somos" >
-   
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur delectus rerum illum impedit, quam atque modi, a nostrum fugit dignissimos voluptate cupiditate veniam nihil repellat! Iste at culpa saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sequi libero in doloribus vero necessitatibus eaque? Voluptas incidunt delectus minus est quia. Hic, facilis sapiente eaque numquam odit maiores quae?</p>
-                   
-                 </div>
-
+        <section>
  
-
-        </section>
 
     </main>
     

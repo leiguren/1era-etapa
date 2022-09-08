@@ -8,173 +8,225 @@
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/mediaq.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
+    
+<header class="encabezado fixed-top">
 
-        <section class="encabezado">
-
+        <div>
+    
             <a class="encabezado__logo" href="../index.html">
                 <img class="encabezado__logo" src="../assets/images/logo.JPG" alt="Logo Dulcinea" width="150px" height="150px" />
             </a>
-            <div>
-
-                <a class="encabezado__link active" href="">INGRESAR</a>
-                <a class="encabezado__link active" href="./contacto.html">REGISTRARSE</a>
-            </div>
+        </div>
+    
+        <div class="navbar navbar-expand-xxl">
+    
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    
+                    <div class="navbar-nav">     
+                        <a class="nav-link active encabezado__link nav-link " href="">INGRESAR</a>
+                        <a class="nav-link encabezado__link nav-link " href="./pages/contacto.html">REGISTRARSE</a>
+                    </div>
+                </div>
+            </div> 
+    
+        </div>
        
-        </section>
- 
-
     </header>
 
     <main class="principal" >
 
         <div>
 
-            <h4 class="principal__titulo">DULCINEA DECO HOME</h4>
+            <h4 class="principal__titulo display-2-sm display-3-none" >DULCINEA DECO HOME</h4>
         
-            <nav class="principal__menu" >
+            <nav class="principal__menu navbar navbar-expand-lg" >
     
-                <ul >
-                    <li class="principal__menu-items qs">
-                        <a href="./quienessomos.html">QUIENES SOMOS</a>
+                <ul class="navbar-nav container" >
+
+                    <li class="principal__menu-items qs nav-item">
+                        <a class="nav-link active" aria-current="page" href="./quienessomos.html">QUIENES SOMOS</a>
                     </li>
 
-                    <li class="principal__menu-items active">
-                        <a href="./productos.html">PRODUCTOS</a>
+                     <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./productos.html">PRODUCTOS</a>
                     </li>
 
-                    <li class="principal__menu-items">
-                        <a href="./comocomprar.html">COMO COMPRAR</a>
-                    </li>
+                    <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./comocomprar.html">COMO COMPRAR</a>
+                     </li>
 
-                    <li class="principal__menu-items">
-                        <a href="./contacto.html">CONTACTOS</a>
+                     <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTOS</a>
                     </li>
-
                 </ul>
             </nav>
-
         </div>
 
-        <section class="product">
+        <section class="product row">
 
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/rusticarayadagris.jpg" alt="Rustica rayada gris">
-                <h4 class="product__productos-titulo">Manta Rustica Rayada Gris</h4>
-                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
+            <div class="col-12">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 col-none-12">
+
+                        <article class="product__productos card text-center">
+                            <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/rusticarayadagris.jpg" alt="Rustica rayada gris">
+                            <div class="card-body">
+                                <h5 class="product__productos-titulo card-title fw-bold text-center">Manta Rustica Rayada Gris</h4>
+                                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                            </div>
+                    </div>        
+
+                    <div class="col-lg-3 col-md-6 col-none-12">
+
+                        <article class="product__productos card text-center">
+                            <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/rusticarayadamarron.HEIC" alt="Rustica rayada marron">
+                            <div class="card-body">
+                                <h5 class="product__productos-titulo card-title fw-bold text-center">Manta Rustica Rayada Marron</h4>
+                                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts  </p>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                            </div>
+                    </div> 
+
+                    <div class="col-lg-3 col-md-6 col-none-12">
+
+                        <article class="product__productos card text-center">
+                            <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/mantarayadablanca.jpg" alt="Rustica rayada blanca">
+                            <div class="card-body">
+                                <h5 class="product__productos-titulo card-title fw-bold text-center">Manta Rustica Rayada Blanca</h4>
+                                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                            </div>
+                    </div> 
+
+                    <div class="col-lg-3 col-md-6 col-none-12">
+
+                        <article class="product__productos card text-center">
+                            <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/mantagris.jpg" alt="Rustica gris">
+                            <div class="card-body ">
+                                <h5 class="product__productos-titulo card-title fw-bold text-center">Manta Rustica Gris</h4>
+                                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                         
+                        <!-- Mantas Nordicas -->
+                        <div class="col-lg-3 col-md-6 col-none-12">
+    
+                            <article class="product__productos card text-center">
+                                <img class="product__productos-images" src="../assets/images/mantas/nordicas/nordicamediahebra.PNG" alt="Rustica nordicas">
+                                <div class="card-body">
+                                    <h5 class="product__productos-titulo card-title fw-bold text-center">Manta Nordica Media Hebra</h4>
+                                    <p class="product__productos-descripcion">Mantas Nordicas media hebra, medidas 1.40mts x 0.50mts o 1.20mts x 0.50mts, colores disponibles: Crudo, Chocolate o Gris perla </p>
+                                    <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                                </div>
+
+                        </div> 
+
+                        <div class="col-lg-3 col-md-6 col-none-12">
+                        
+                            <article class="product__productos card text-center">
+                            <img class="product__productos-images" src="../assets/images/mantas/nordicas/d128e091028edf40072d3b38715c7158.jpg" alt="Rustica gris">
+                            <div class="card-body ">
+                                <h5 class="product__productos-titulo card-title fw-bold text-center">Manta Nordica Hebra Entera</h4>
+                                <p class="product__productos-descripcion">Mantas Nordicas hebra entera, medidas 1.40mts x 0.50mts o 1.20mts x 0.50mts, colores disponibles: Crudo, Chocolate o Gris perla </p>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                            </div>
+                        </div>    
+
+                        <!-- Velas Aromaticas -->
+                        <div class="col-lg-3 col-md-6 col-none-12">
+    
+                            <article class="product__productos card text-center">
+                                <img class="product__productos-images" src="../assets/images/velas/velas cuencos 1.jpg" alt="Velas madera">
+                                <div class="card-body">
+                                    <h5 class="product__productos-titulo card-title fw-bold text-center">Velas Aromaticas de Soja</h4>
+                                    <p class="product__productos-descripcion">Velas aromaticas, en cuenco de algarrobo 14cm 4 pabilos, ideal para agasajar a una persona especial en un momento especial </p>
+                                    <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                                </div>
+                        </div> 
+    
+                        <div class="col-lg-3 col-md-6 col-none-12">
+    
+                            <article class="product__productos card text-center">
+                                <img class="product__productos-images" src="../assets/images/velas/velasvidrio2.jpg" alt="Velas Vidrio">
+                                <div class="card-body">
+                                    <h5 class="product__productos-titulo card-title fw-bold text-center">Velas Aromaticas de Soja</h4>
+                                    <p class="product__productos-descripcion">Velas aromaticas, en recipiente de vidrio, con petalos de flores secas, Ideal para decorar esa mesa o mueble que tanto te gusta.  </p>
+                                    <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                                </div>
+                        </div>  
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 col-none-12">
+    
+                            <article class="product__productos card text-center">
+                                <img class="product__productos-images" src="../assets/images/mantas/nordicas/nordicamediahebra.PNG" alt="Rustica nordicas">
+                                <div class="card-body">
+                                    <h5 class="product__productos-titulo card-title fw-bold text-center">Manta Nordica Media Hebra</h4>
+                                    <p class="product__productos-descripcion">Mantas Nordicas media hebra, medidas 1.40mts x 0.50mts o 1.20mts x 0.50mts, colores disponibles: Crudo, Chocolate o Gris perla </p>
+                                    <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                                </div>
+
+                        </div> 
+
+                        <div class="col-lg-3 col-md-6 col-none-12">
+                        
+                            <article class="product__productos card text-center">
+                            <img class="product__productos-images" src="../assets/images/mantas/nordicas/hebraenteragris.PNG" alt="Rustica gris">
+                            <div class="card-body ">
+                                <h5 class="product__productos-titulo card-title fw-bold text-center">Manta Nordica Hebra Entera</h4>
+                                <p class="product__productos-descripcion">Mantas Nordicas hebra entera, medidas 1.40mts x 0.50mts o 1.20mts x 0.50mts, colores disponibles: Crudo, Chocolate o Gris perla </p>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                            </div>
+                        </div>    
+
+    
+                        <div class="col-lg-3 col-md-6 col-none-12">
+    
+                            <article class="product__productos card text-center">
+                                <img class="product__productos-images" src="../assets/images/velas/velamadera.JPG" alt="Velas madera">
+                                <div class="card-body">
+                                    <h5 class="product__productos-titulo card-title fw-bold text-center">Velas Aromaticas de Soja</h4>
+                                    <p class="product__productos-descripcion">Velas aromaticas, en cuenco de algarrobo 14cm 4 pabilos, ideal para agasajar a una persona especial en un momento especial </p>
+                                    <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                                </div>
+                        </div> 
+    
+                        <div class="col-lg-3 col-md-6 col-none-12">
+    
+                            <article class="product__productos card text-center">
+                                <img class="product__productos-images" src="../assets/images/velas/velavidrio.jpg" alt="Velas Vidrio">
+                                <div class="card-body">
+                                    <h5 class="product__productos-titulo card-title fw-bold text-center">Velas Aromaticas de Soja</h4>
+                                    <p class="product__productos-descripcion">Velas aromaticas, en recipiente de vidrio, con petalos de flores secas, Ideal para decorar esa mesa o mueble que tanto te gusta.  </p>
+                                    <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
+                                </div>
+                        </div>  
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/rusticarayadamarron.HEIC" alt="Rustica rayada marron">
-                <h4 class="product__productos-titulo">Manta Rustica Rayada Marron</h4>
-                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-            </div>
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/mantarayadablanca.jpg" alt="Rustica rayada blanca">
-                <h4 class="product__productos-titulo">Manta Rustica Rayada Blanca</h4>
-                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-
-            </div>
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/mantagris.jpg" alt="Rustica gris">
-                <h4 class="product__productos-titulo">Manta Rustica Gris</h4>
-                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-            </div>
-            <!-- Mantas Nordicas -->
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/nordicas/nordicamediahebra.PNG" alt="Rustica nordicas">
-                <h4 class="product__productos-titulo">Manta Nordica Media Hebra</h4>
-                <p class="product__productos-descripcion">Mantas Nordicas media hebra, medidas 1.40mts x 0.50mts o 1.20mts x 0.50mts, colores disponibles: Crudo, Chocolate o Gris perla </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-            </div>
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/nordicas/hebraenteragris.PNG" alt="Rustica rayada marron">
-                <h4 class="product__productos-titulo">Manta Nordica Hebra Entera</h4>
-                <p class="product__productos-descripcion">Mantas Nordicas hebra entera, medidas 1.40mts x 0.50mts o 1.20mts x 0.50mts, colores disponibles: Crudo, Chocolate o Gris perla </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-
-            </div>
-            <!-- Velas Aromaticas -->
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/velas/velamadera.JPG" alt="Rustica rayada blanca">
-                <h4 class="product__productos-titulo">Velas Aromaticas de Soja</h4>
-                <p class="product__productos-descripcion">Velas aromaticas, en cuenco de algarrobo 14cm 4 pabilos, ideal para agasajar a una persona especial en un momento especial </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-
-            </div>
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/velas/velavidrio.jpg" alt="Rustica gris">
-                <h4 class="product__productos-titulo">Velas Aromaticas de Soja</h4>
-                <p class="product__productos-descripcion">Velas aromaticas, en recipiente de vidrio, con petalos de flores secas, Ideal para decorar esa mesa o mueble que tanto te gusta.  </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-
-            </div>
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/rusticarayadagris.jpg" alt="Rustica rayada gris">
-                <h4 class="product__productos-titulo">Manta Rustica Rayada Gris</h4>
-                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-
-            </div>
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/rusticarayadamarron.HEIC" alt="Rustica rayada marron">
-                <h4 class="product__productos-titulo">Manta Rustica Rayada Marron</h4>
-                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-            </div>
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/mantarayadablanca.jpg" alt="Rustica rayada blanca">
-                <h4 class="product__productos-titulo">Manta Rustica Rayada Blanca</h4>
-                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-
-            </div>
-
-            <div class="product__productos">
-                <img class="product__productos-images" src="../assets/images/mantas/mantasrusticas/mantagris.jpg" alt="Rustica gris">
-                <h4 class="product__productos-titulo">Manta Rustica Gris</h4>
-                <p class="product__productos-descripcion">Mantas Rusticas XXL, excelente calidad Punto Oxford. 95% algodon 5% poliester,Terminacion con flecos,medidas 2mts x 1.60mts </p>
-                <button class="product__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">Comprar Ahora</a>
-                </button>
-            </div>
         
         </section>
     </main>

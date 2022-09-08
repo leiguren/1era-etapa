@@ -9,90 +9,150 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/mediaq.css" />
     <link rel="stylesheet" href="./style/animate.css" />
-
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
 </head>
 
  <body>
 
-    <header class="encabezado">
+<header class="encabezado fixed-top">
 
-            <a class="encabezado__logo" href="./index.html">
-                <img class="encabezado__logo" src="./assets/images/logo.JPG" alt="Logo Dulcinea" width="150px" height="150px" />
-            </a>
+    <div>
 
-            
-        <div>
+        <a class="encabezado__logo" href="./index.html">
+            <img class="encabezado__logo" src="./assets/images/logo.JPG" alt="Logo Dulcinea" width="150px" height="150px" />
+        </a>
+    </div>
 
-                <a class="encabezado__link " href="">INGRESAR</a>
-                <a class="encabezado__link " href="./pages/contacto.html">REGISTRARSE</a>
-        </div>
-       
-    </header> 
+    <div class="navbar navbar-expand-xxl">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                <div class="navbar-nav">     
+                    <a class="nav-link active encabezado__link nav-link " href="">INGRESAR</a>
+                    <a class="nav-link encabezado__link nav-link " href="./pages/contacto.html">REGISTRARSE</a>
+                </div>
+            </div>
+        </div> 
+
+    </div>
+   
+</header>
 
     <main class="principal" >
 
         <div>
 
-            <h4 class="wow animate__bounceInRight principal__titulo " >DULCINEA DECO HOME</h4>
+            <h4 class="principal__titulo display-2-sm display-3-none" >DULCINEA DECO HOME</h4>
         
-            <nav class="principal__menu" >
+            <nav class="principal__menu navbar navbar-expand-lg" >
     
-                <ul >
-                    <li class="principal__menu-items qs">
-                        <a href="./pages/quienessomos.html">QUIENES SOMOS</a>
+                <ul class="navbar-nav container " >
+
+                    <li class="principal__menu-items qs nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/quienessomos.html">QUIENES SOMOS</a>
                     </li>
 
-                     <li class="principal__menu-items">
-                        <a href="./pages/productos.html">PRODUCTOS</a>
+                     <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/productos.html">PRODUCTOS</a>
+                    </li>
+
+                    <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/comocomprar.html">COMO COMPRAR</a>
                      </li>
 
-                    <li class="principal__menu-items">
-                        <a href="./pages/comocomprar.html">COMO COMPRAR</a>
-                     </li>
-
-                     <li class="principal__menu-items">
-                        <a href="./pages/contacto.html">CONTACTOS</a>
+                     <li class="principal__menu-items nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/contacto.html">CONTACTOS</a>
                     </li>
                 </ul>
             </nav>
         </div>
+        
+        <center>
 
-        <div class="portada">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> 
+                <div class="carousel-inner h-25 d-inline-bloc">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/portada/portadamantagris.jpg" class="d-block w-100" alt="manta gris">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/portada/portadamantasrusticas.jpg" class="d-block w-100" alt="manta rustica1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/portada/portadavelascuencos.jpg" class="d-block w-100" alt="cuencos velas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/portada/portadafusta.jpg" class="d-block w-100" alt="fustas velas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/portada/portadavelasvidrio.jpg" class="d-block w-100" alt="velasvidrio">
+                  </div>
+                </div>
+              </div>
 
-        </div>
+        </center>
 
         <h5 class="principal__titulo-2"> Destacados de la semana </h5>
 
-        <div class="destacados wow animate__backInRight" data-wow-duration="4s">
+        <section class="destacados row wow animate__backInRight" data-wow-duration="4s">
 
-            <article class="destacados__productos">
-                <img class="destacados__productos-images" src="./assets/images/mantas/mantasrusticas/rusticarayadagris.jpg" alt="Rustica rayada gris">
-                <h4 class="destacados__productos-titulo">Manta Rustica Rayada Gris</h4>
-                <button class="destacados__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 3.190</a>
-                </button>
+            <div class="col-12">
 
-            </article>
+                <div class="row">
 
-            <article class="destacados__productos">
-                <img class="destacados__productos-images" src="./assets/images/mantas/nordicas/nordicamediahebra.PNG" alt="Rustica rayada gris">
-                <h4 class="destacados__productos-titulo">Manta Nordica Media Hebra </h4>
-                <button class="destacados__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 2.900</a>
-                </button>
+                    <div class="col-lg-3 col-md-6">
 
-            </article>
+                        <article class="destacados__productos card text-center">
+                            <img class="destacados__productos-images" src="./assets/images/mantas/mantasrusticas/rusticarayadagris.jpg" alt="Rustica rayada gris">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold text-center">Manta Rustica Rayada Gris</h4>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 3.190</a>
+                            </div>
+                    </div>        
 
-            <article class="destacados__productos">
-                <img class="destacados__productos-images" src="./assets/images/velas/velavidrio.jpg" alt="Rustica rayada gris">
-                <h4 class="destacados__productos-titulo">Velas Aromaticas de Soja</h4>
-                <button class="destacados__productos-boton">
-                    <a href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 890</a>
-                </button>
+                    <div class="col-lg-3 col-md-6">
+    
+                        <article class="destacados__productos card text-center">
+                            <img class="destacados__productos-images" src="./assets/images/mantas/nordicas/nordicamediahebra.PNG" alt="Rustica nordicas">
+                            <div class="card-body">
+                                <h4 class="destacados__productos-titulo card-title fw-bold text-center">Manta Nordica Media Hebra</h4>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 2.990</a>
+                            </div>
 
-            </article>
+                    </div> 
 
-        </div>
+                    <div class="col-lg-3 col-md-6">
+    
+                        <article class="destacados__productos card text-center">
+                            <img class="destacados__productos-images" src="./assets/images/velas/velas cuencos 1.jpg" alt="Velas madera">
+                            <div class="card-body">
+                                <h4 class="destacados__productos-titulo card-title fw-bold text-center">Velas Aromaticas de Soja</h4>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 1.090</a>
+                            </div>
+                    </div> 
+
+                   <div class="col-lg-3 col-md-6">
+
+                        <article class="destacados__productos card text-center">
+                            <img class="destacados__productos-images" src="./assets/images/velas/velasvidrio2.jpg" alt="Velas Vidrio">
+                            <div class="card-body">
+                                <h4 class="destacados__productos-titulocard-title fw-bold text-center">Velas Aromaticas de Soja</h4>
+                                <a class="btn btn-secondary fw-bold" href="https://wa.me/qr/JPQZIKIYSNTXA1">$ 1.190</a>
+                            </div>
+                    </div>  
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
