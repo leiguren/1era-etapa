@@ -1,0 +1,46 @@
+/* Header  todas las paginas*/
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    background-image: $backgroundpr;
+    box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 40%);
+    max-width: 100%;
+
+    &__logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 15px; 
+        box-shadow: 30px 30px 50px -5px rgba(135, 134, 134, 0.6);
+    }
+    &__link{
+        margin-inline: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: bold;
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .encabezado__link {
+        font-size: 12px;
+        margin-inline: 5px;
+    }
+    .encabezado{
+        padding: 10px 15px;
+    }
+    .encabezado__logo{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+@media screen and (max-width: 620px) {
+    .encabezado__link {
+        font-size: 8px;
+        margin-inline: 5px;
+    }
+}

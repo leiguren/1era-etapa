@@ -1,0 +1,191 @@
+/* Pie de Pagina */
+.pie{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    border-top: 5px dashed #696969;
+    border-bottom: 5px dashed #696969 ;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), #cfcfcf);
+    
+    &__titulo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 25px;
+        margin-top: 10px;
+        padding-bottom: -20px;
+    }
+    &__menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        & a{
+            text-decoration: none;
+            padding-inline: 20px;
+            color: black;
+            font-weight: bold;
+            border-right: 3px solid black;
+            &:hover{
+                text-decoration: underline double;
+                color: black;
+            }
+        }
+        &-nav{
+            &.in{
+            border-left: 3px solid black; 
+            }
+            &.active{
+            text-decoration: underline double; 
+            }
+        }
+    }
+    &__redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to right, rgb(255, 255, 255), #cfcfcf);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 3px dashed #696969;
+        &-whatsapp{
+            position: fixed;
+            bottom: 5px;
+            right: 20px;
+            background: none;
+        }
+        &-gral{
+            padding-inline: 20px;
+        }
+        & a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }    
+}
+
+
+
+/* Medias Queries */
+
+@media screen and (max-width: 1120px) {
+    .pie__redes a{
+        font-size: 15px;
+    }
+    .pie__redes img{
+        width: 25px;
+    }
+    .pie__redes-gral{
+        padding-inline: 10px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .pie__titulo{
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .pie__menu a{
+        font-size: 10px;
+        padding-inline: 5px;
+    }
+    .pie__redes a{
+        font-size: 15px;
+    
+    }
+
+    .pie__redes-gral{
+        padding-inline: 10px;
+    }
+    .pie__redes img{
+        width: 20px;
+
+    }
+
+    .pie__redes-whatsapp{
+        position: fixed;
+        bottom: 25px;
+        right: 20px;
+    
+    }
+    .pie__redes-whatsapp{
+        bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .pie{
+        height: 80px;
+    }
+
+    .pie__menu{
+        margin-bottom: 5px;
+    }
+    .pie__menu a{
+        font-size: 8px;
+        padding-inline: 5px;
+    }
+    .pie__titulo{
+        padding-bottom: 0px;
+    }
+    
+    .pie__redes a{
+        font-size: 10px;
+    
+    }
+    .pie__redes-whatsapp{
+        bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 485px) {
+    .pie__redes-gral{
+        padding-inline: 5px;
+    }
+
+}
+@media screen and (max-width: 441px) {
+    .pie__menu-nav.in{
+        border-left: none;
+    }
+    .pie__menu a{
+        border-right: none;
+        padding-inline: 2px;
+    }
+    .pie__redes a{
+        font-size: 0px;
+    }
+    .pie__redes-whatsapp{
+        bottom: 10px;
+
+}
+}
+@media screen and (max-width: 344px) {
+    .principal__menu-items{
+        padding-inline: 15px;
+    }
+    .pie__redes a{
+        font-size: 0px;
+    }
+
+    .principal__titulo-2{
+        font-size: 15px;
+    }
+    .pie__titulo{
+        font-size: 13px;
+
+}
+    .pie__redes-whatsapp{
+        position: fixed;
+        bottom: 10px;
+        right: 8px;
+
+}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "dulcineadh",
+  "version": "1.0.0",
+  "description": "Proyecto pagina de decoracion",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css2/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leiguren/1era-etapa.git"
+  },
+  "author": "Lucas Eiguren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leiguren/1era-etapa/issues"
+  },
+  "homepage": "https://github.com/leiguren/1era-etapa#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
