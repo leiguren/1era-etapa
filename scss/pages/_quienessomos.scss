@@ -1,71 +1,44 @@
 /* main nuestra historia */
 
 .titulo{
-    display:flex ;
-    justify-content: center;
+    @include flex (center);
     font-size: 50px;
     margin-top: 0;
     padding-bottom: 10px;
 
 }
-
 .historia{
-
-    display: grid;
-    grid-template-columns: 3fr;
-    grid-template-rows: repeat(3 1fr);
+    @extend .contenedor;
     justify-content: center;
-    padding: 0px 250px;
-
-
-}
-
-.historia__nosotros{
-    display: flex;
-    justify-content: center;
-    padding: 10px 20px;
-    border-radius: 10px;
-    width: 100%;
-    font-weight: bold;
-    text-align: center;
-    background-color:#f7f7f6;
-    box-shadow: 30px 30px 50px -12px #979696;
-    margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgb(255, 255, 255), #cfcfcf);
-}
-
-
-
-.historia__nosotros img {
-    width: 100%;
-    float: left;
-   
-}
-
-.historia__nosotros p{
-    margin-top: 20px;
-}
-
-.historia__dh{
-    padding: 10px 20px;
-    border-radius: 10px;
-    width: 100%;
-    font-weight: bold;
-    text-align: center;
-    background-color:#f7f7f6;
-    box-shadow: 30px 30px 50px -12px rgb(151, 150, 150);
-    margin-bottom: 20px;
-    background-image: linear-gradient(to right, #cfcfcf, #FFFF);
-}
-
-.historia__dh p{
-    margin-top: 20px;
-}
-
-.historia__dh img {
-    width: 50%;
-    border-radius: 10px;
-    float: right;
-    
-
+    &__nosotros{
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 30px 30px 50px -12px #979696;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right, rgb(255, 255, 255), #cfcfcf);
+        & img{
+            width: 100%;
+        }
+        & p{
+            margin-top: 20px;
+        }
+    }
+    &__dh{
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 30px 30px 50px -12px #979696;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right, #cfcfcf, #FFFF);
+        & img{
+            width: 60%;
+            border-radius: 10px;
+        }
+        & p{
+            margin-top: 20px;
+        }
+    }
 }

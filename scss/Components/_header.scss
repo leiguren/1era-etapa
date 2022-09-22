@@ -1,13 +1,15 @@
 /* Header  todas las paginas*/
 
 .encabezado{
-    display: flex;
-    justify-content: space-between;
+    @extend .contenedor;
+    @include flex (space-between);
+    // display: flex;
+    // justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
     background-image: $backgroundpr;
     box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 40%);
-    max-width: 100%;
+   
 
     &__logo{
         width: 60px;

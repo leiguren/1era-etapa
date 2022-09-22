@@ -9,7 +9,7 @@
 }
 
 body{
-    width: 100%;
+    @extend .contenedor;
     background-image: $backgroundpr;
     background-attachment: fixed;
     background-position: center;
@@ -23,7 +23,22 @@ header{
 
 
 main{
-    padding: 40px 5px;
+    padding: 40px 0px;
     margin-bottom: 50px;
+}
+
+.contenedor{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin grid ($columnas) {
+    display: grid;
+    grid-template-columns: repeat(columnas, 1fr);   
+}
+
+@mixin flex ($valuejustify) {
+    display: flex;
+    justify-content: $valuejustify; 
 }
 

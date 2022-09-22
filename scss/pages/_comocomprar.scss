@@ -1,20 +1,19 @@
 /* main como comprar */
 
-.comocomprar__titulo{
-    margin: 20px;
-    font-size: 23px;
-    font-weight: bold;
-}
-
 .comocomprar{
     padding-inline: 40px;
+
+    &__titulo{
+        margin: 20px;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    &__1{
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
 }
 
-
-.comocomprar__1{
-    font-size: 18px;
-    padding-bottom: 15px;
-}
 
 /* Medias Queries */
 
@@ -22,7 +21,6 @@
 
     .comocomprar__1{
         font-size: 15px;
-
     }
 }
 @media screen and (max-width: 880px) {
@@ -34,9 +32,7 @@
 }
 @media screen and (max-width: 620px) {
     .comocomprar__titulo{
-    
         font-size: 15px;
-    
     }
 }
 @media screen and (max-width: 441px) {
@@ -48,7 +44,6 @@
 }
 @media screen and (max-width: 344px) {
 
-
     .comocomprar__titulo{
         
         font-size: 12px;
@@ -56,7 +51,6 @@
         margin-bottom: 10px;
     
     }
-    
     .comocomprar__1{
         font-size: 10px;
         margin-bottom: 5px;

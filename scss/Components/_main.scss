@@ -1,17 +1,14 @@
 /* Main menu navegacion */
 
 .principal{
-    display: grid;
-    grid-template-columns: 1fr;
+    @include grid(1);
     &__titulo{
+        @include flex (center);
         margin-top: 50px;
-        display: flex;
-        justify-content: center;
         font-size: $fontsizeprimary;
     }
     &__menu{
-        display: flex;
-        justify-content: center;
+        @include flex (center);
         margin-bottom: 10px;
         &-items{
             display: inline-block;

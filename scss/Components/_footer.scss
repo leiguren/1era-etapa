@@ -1,24 +1,19 @@
 /* Pie de Pagina */
 .pie{
-    display: grid;
-    grid-template-columns: 1fr;
+    @extend .contenedor;
+    @include grid(1);
     grid-template-rows: repeat(3, 1fr);
     border-top: 5px dashed #696969;
     border-bottom: 5px dashed #696969 ;
-    width: 100%;
     background-image: linear-gradient(to right, rgb(255, 255, 255), #cfcfcf);
-    
     &__titulo{
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        @include flex (center);
         font-size: 25px;
         margin-top: 10px;
         padding-bottom: -20px;
     }
     &__menu{
-        display: flex;
-        justify-content: center;
+        @include flex (center);
         align-items: center;
         margin-bottom: 20px;
         & a{
@@ -33,17 +28,16 @@
             }
         }
         &-nav{
-            &.in{
-            border-left: 3px solid black; 
-            }
+             &.in{
+                border-left: 3px solid black; 
+             }
             &.active{
-            text-decoration: underline double; 
-            }
+                text-decoration: underline double; 
+             }
         }
     }
     &__redes{
-        display: flex;
-        justify-content: center;
+        @include flex (center);
         align-items: center;
         background-image: linear-gradient(to right, rgb(255, 255, 255), #cfcfcf);
         padding-top: 10px;
@@ -58,16 +52,9 @@
         &-gral{
             padding-inline: 20px;
         }
-        & a{
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
     }    
 }
+
 
 
 
