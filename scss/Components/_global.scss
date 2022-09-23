@@ -42,3 +42,16 @@ main{
     justify-content: $valuejustify; 
 }
 
+// maps
+
+$fontscolor: (
+  'one': black,
+  'two': white,
+  'three':whitesmoke,
+  'four': grey,
+);
+
+.formulario{
+    color: map-get($map:$fontscolor , $key: 'two' );
+  
+}
