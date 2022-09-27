@@ -19,81 +19,132 @@
         margin-bottom: 10px;
         border-bottom: double;
     }
-    &__label{
-        font-size: 20px;
+    // &__sexo{
+    //      font-size: 18px;
+    //      padding: 10px 0px;
+    // }
+    // &__2{
+    //      width: 350px;
+    //      &-p{
+    //          font-size: 20px;
+    //          padding-top: 10px;
+    //      }
+    //     &-textarea{
+    //         width: 100%;
+    //         resize: none;
+    //         font-size: 20px;
+    //         margin: 10px 0px
+    //     } 
+    // }
+    // &__3{
+    //     margin-bottom: 10px;
+    //     margin-top: 5px;
+    //     &-label{
+    //         font-size: 20px;
+    //     }
+    // }
+    // &__4{
+    //     display: flex;
+    //     justify-content: space-around;
+    //     & button{
+    //         padding: 5px 10px;
+    //         font-size: 15px;
+    //         color: whitesmoke;
+    //         background-color: #7d7d7d;
+    //         border-radius: 5px;
+    //         border: none;
+    //         cursor: pointer;
+    //         &:hover{
+    //             outline: none;
+    //             background-color: black;
+    //         }   
+    //     }
+    // }
     }
-    &__control{
+    .control{
         width: 350px;
         margin: 5px 0;
         font-size: 25px;
     }
-    &__sexo{
-        font-size: 18px;
-        padding: 10px 0px;
+    .label{
+        font-size: 20px;
     }
-    &__2{
-        width: 350px;
-        &-p{
-            font-size: 20px;
-            padding-top: 10px;
-        }
-        &-textarea{
-            width: 100%;
-            resize: none;
-            font-size: 20px;
-            margin: 10px 0px
-        }
+    
+    .formulario__sexo{
+         font-size: 18px;
+         padding: 10px 0px;
     }
-    &__3{
+    
+    .formualario__2{
+         width: 350px;
+     }
+    
+    .formulario__2-p{
+         font-size: 20px;
+         padding-top: 10px;
+    }
+    
+    .formulario__2-textarea{
+        width: 100%;
+        resize: none;
+        font-size: 20px;
+        margin: 10px 0px
+    }
+    
+    .formulario__3{
         margin-bottom: 10px;
         margin-top: 5px;
-        &-label{
-            font-size: 20px;
-        }
     }
-    &__4{
-        @include flex (space-around);
-        & button{
-            padding: 5px 10px;
-            font-size: 15px;
-            color: whitesmoke;
-            background-color: #7d7d7d;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            &:hover{
-                outline: none;
-                background-color: black;
-            }
-            } 
-        }
+    
+    .formulario__3-label{
+        font-size: 20px;
+    }
+    
+    .formulario__4{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .formulario__4 button{
+        padding: 5px 10px;
+        font-size: 15px;
+        color: whitesmoke;
+        background-color: #7d7d7d;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;   
+    }
+    
+    .formulario__4 button:hover, button:focus{
+        outline: none;
+        background-color: black;
     }
 
 /* Medias Queries */
 
-@media screen and (max-width: 1120px) {
 
+@media screen and (max-width: 620px){
     .formulario{
         width: 300px;
     }
     .formulario__titulo{
-        font-size: 30px;
+        font-size: 20px;
     }
     .label{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .formulario__sexo{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .control{
-        width: 250px;
+        width: 265px;
         margin: 5px 0;
-        font-size: 15px;}
+        font-size: 12px;}
 
     .formulario__2-p{
-        font-size: 15px;
+        font-size: 16px;
     }
     .formulario__2-textarea{
         width: 100%;
@@ -106,55 +157,6 @@
     }
     .formulario__4 button{
         padding: 5px 5px;
-        font-size: 10px;
-    }
-
-
-
-    
-}
-
-
-
-@media screen and (max-width: 620px) {
-
-
-
-    .formulario{
-        width: 250px;
-    }
-    .formulario__titulo{
-        font-size: 20px;
-    }
-    .label{
         font-size: 12px;
     }
-
-    .formulario__sexo{
-        font-size: 8px;
-    }
-
-    .control{
-        width: 200px;
-        margin: 5px 0;
-        font-size: 10px;}
-
-    .formulario__2-p{
-        font-size: 12px;
-    }
-    .formulario__2-textarea{
-        width: 100%;
-        height: 100px;
-        font-size: 10px;
-    }
-    .formulario__3-label{
-        font-size: 12px;
-    
-    }
-    .formulario__4 button{
-        padding: 5px 5px;
-        font-size: 8px;
-    }
-
-    
 }

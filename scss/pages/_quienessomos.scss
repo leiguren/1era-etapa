@@ -42,3 +42,31 @@
         }
     }
 }
+@media screen and (max-width: 1120px) {
+    .titulo{
+        font-size: 35px;
+    }
+    .historia__nosotros p{
+        font-size: 12px;
+    }
+    .historia__dh p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .titulo{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .titulo{
+        font-size: 17px;
+    }
+    .historia__nosotros p{
+        font-size: 10px;
+    }
+    .historia__dh p{
+        font-size: 10px;
+    }
+}
+

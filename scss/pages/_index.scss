@@ -20,6 +20,7 @@
 }
 
 .destacados{
+    @extend .contenedor;
     justify-content: center;
     padding: 50px 40px;
     &__productos{ 
@@ -47,3 +48,13 @@
         font-size: 20px;
     }
 }
+@media screen and (max-width: 880px) {
+    .carousel-item img{
+            height: 50vh;
+        }
+    }
+    @media screen and (max-width: 620px) {
+        .carousel-item img{
+            height: 40vh;
+        }
+    }
