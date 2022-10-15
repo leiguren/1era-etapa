@@ -20,20 +20,15 @@
                 }
             }
         }
-
     }
 }
-
 /* Medias Queries */
-
 @media screen and (max-width: 1120px) {
     .principal__titulo{
         font-size: 45px;
     }
 }
-
 @media screen and (max-width: 880px) {
-
     .principal__titulo{
         font-size: 35px;
     }
@@ -41,7 +36,6 @@
         font-size: 18px;
     }
 }
-
 @media screen and (max-width: 620px) {
     .principal__titulo{
         font-size: 25px;

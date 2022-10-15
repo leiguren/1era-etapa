@@ -7,7 +7,6 @@
     box-sizing: border-box;
     font-family: 'Cinzel', serif;
 }
-
 body{
     @extend .contenedor;
     background-image: $backgroundpr;
@@ -15,43 +14,33 @@ body{
     background-position: center;
     justify-content: center;
 }
-
 header{
     position: sticky;
     top: 0;
 }
-
-
 main{
     padding: 40px 0px;
     margin-bottom: 50px;
 }
-
 .contenedor{
     width: 100%;
     margin: 0 auto;
 }
-
 @mixin grid ($columnas) {
     display: grid;
     grid-template-columns: repeat(columnas, 1fr);   
 }
-
 @mixin flex ($valuejustify) {
     display: flex;
     justify-content: $valuejustify; 
 }
-
 // maps
-
-$fontscolor: (
+$fontscolor:(
   'one': black,
   'two': white,
   'three':whitesmoke,
   'four': grey,
 );
-
 .formulario{
-    color: map-get($map:$fontscolor , $key: 'two' );
-  
+    color: map-get($map:$fontscolor , $key: 'two' ); 
 }

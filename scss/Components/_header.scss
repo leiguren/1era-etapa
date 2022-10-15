@@ -3,14 +3,10 @@
 .encabezado{
     @extend .contenedor;
     @include flex (space-between);
-    // display: flex;
-    // justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
     background-image: $backgroundpr;
     box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 40%);
-   
-
     &__logo{
         width: 60px;
         height: 60px;
@@ -24,9 +20,7 @@
         font-size: bold;
     }
 }
-
 @media screen and (max-width: 880px) {
-
     .encabezado__link {
         font-size: 12px;
         margin-inline: 5px;
@@ -38,7 +32,6 @@
         width: 40px;
         height: 40px;
     }
-
 }
 @media screen and (max-width: 620px) {
     .encabezado__link {

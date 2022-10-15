@@ -6,7 +6,6 @@
         height: 60vh;
     }
 }
-
 .principal__titulo-2{
     @include flex (center);
     margin-top: 30px;
@@ -18,7 +17,6 @@
     border-bottom: 2px solid black;
     background-image: linear-gradient(to right, grey, whitesmoke 55% 45%);
 }
-
 .destacados{
     @extend .contenedor;
     justify-content: center;
@@ -42,7 +40,6 @@
 
     }
 }
-
 @media screen and (max-width: 880px) {
     .principal__titulo-2{
         font-size: 20px;
@@ -51,10 +48,10 @@
 @media screen and (max-width: 880px) {
     .carousel-item img{
             height: 50vh;
-        }
     }
+}
     @media screen and (max-width: 620px) {
-        .carousel-item img{
+    .carousel-item img{
             height: 40vh;
-        }
     }
+}

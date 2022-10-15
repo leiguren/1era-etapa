@@ -26,7 +26,7 @@
             }
             &.active{
                 text-decoration: underline double; 
-             }
+            }
         }
     }
     &__redes{
@@ -47,9 +47,7 @@
         }
     }    
 }
-
 /* Medias Queries */
-
 @media screen and (max-width: 1120px) {
     .pie__redes a{
         font-size: 15px;
@@ -61,7 +59,6 @@
         padding-inline: 10px;
     }
 }
-
 @media screen and (max-width: 880px) {
     .pie__titulo{
         font-size: 18px;
@@ -72,20 +69,16 @@
         font-size: 13px;
         padding-inline: 5px;
     }
-
     .pie__redes-gral{
         padding-inline: 10px;
     }
     .pie__redes img{
         width: 25px;
-
     }
-
     .pie__redes-whatsapp{
         position: fixed;
         bottom: 25px;
-        right: 20px;
-    
+        right: 20px; 
     }
     .pie__redes-whatsapp{
         bottom: 15px;
@@ -96,7 +89,6 @@
     .pie{
         height: 80px;
     }
-
     .pie__menu{
         margin-bottom: 5px;
     }
@@ -110,14 +102,12 @@
     .pie__redes-whatsapp{
         bottom: 15px;
     }
-
 }
 
 @media screen and (max-width: 485px) {
     .pie__redes-gral{
         padding-inline: 5px;
     }
-
 }
 @media screen and (max-width: 441px) {
     .pie__menu-nav.in{
@@ -132,7 +122,6 @@
     }
     .pie__redes-whatsapp{
         bottom: 10px;
-
 }
 }
 @media screen and (max-width: 344px) {
@@ -142,18 +131,15 @@
     .pie__redes a{
         font-size: 0px;
     }
-
     .principal__titulo-2{
         font-size: 15px;
     }
     .pie__titulo{
         font-size: 13px;
-
 }
     .pie__redes-whatsapp{
         position: fixed;
         bottom: 10px;
         right: 8px;
-
 }
 }
