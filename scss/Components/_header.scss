@@ -13,17 +13,22 @@
         border-radius: 15px; 
         box-shadow: 30px 30px 50px -5px rgba(135, 134, 134, 0.6);
     }
-    &__link{
-        margin-inline: 10px;
-        text-decoration: none;
-        color: black;
-        font-size: bold;
+    &__link a{
+            margin-inline: 10px;
+            text-decoration: none;
+            color: black;
+            &:hover{
+                text-decoration: underline double;
+                color: black;
+            }   
+        }
     }
-}
 @media screen and (max-width: 880px) {
     .encabezado__link {
         font-size: 12px;
+        & a{
         margin-inline: 5px;
+        }
     }
     .encabezado{
         padding: 10px 15px;
@@ -35,7 +40,9 @@
 }
 @media screen and (max-width: 620px) {
     .encabezado__link {
-        font-size: 8px;
-        margin-inline: 5px;
+        font-size: 10px;
+        & a{
+            margin-inline: none;
+            }
     }
 }

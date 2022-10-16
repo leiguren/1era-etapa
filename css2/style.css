@@ -3183,16 +3183,19 @@ main {
     height: 60px;
     border-radius: 15px;
     box-shadow: 30px 30px 50px -5px rgba(135, 134, 134, 0.6); }
-  .encabezado__link {
+  .encabezado__link a {
     margin-inline: 10px;
     text-decoration: none;
-    color: black;
-    font-size: bold; }
+    color: black; }
+    .encabezado__link a:hover {
+      text-decoration: underline double;
+      color: black; }
 
 @media screen and (max-width: 880px) {
   .encabezado__link {
-    font-size: 12px;
-    margin-inline: 5px; }
+    font-size: 12px; }
+    .encabezado__link a {
+      margin-inline: 5px; }
   .encabezado {
     padding: 10px 15px; }
   .encabezado__logo {
@@ -3201,8 +3204,9 @@ main {
 
 @media screen and (max-width: 620px) {
   .encabezado__link {
-    font-size: 8px;
-    margin-inline: 5px; } }
+    font-size: 10px; }
+    .encabezado__link a {
+      margin-inline: none; } }
 
 /* Main menu navegacion */
 .principal {
@@ -3211,7 +3215,7 @@ main {
   .principal__titulo {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 60px; }
   .principal__menu {
     display: flex;
@@ -3267,8 +3271,6 @@ main {
       .pie__menu a:hover {
         text-decoration: underline double;
         color: black; }
-      .pie__menu a.active {
-        text-decoration: underline double; }
   .pie__redes {
     display: flex;
     justify-content: center;

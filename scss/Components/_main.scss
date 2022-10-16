@@ -4,7 +4,7 @@
     @include grid(1);
     &__titulo{
         @include flex (center);
-        margin-top: 50px;
+        margin-top: 60px;
         font-size: $fontsizeprimary;
     }
     &__menu{
