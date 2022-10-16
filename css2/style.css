@@ -3357,9 +3357,9 @@ main {
 
 /* Main Index portada */
 .carousel {
-  width: 90%; }
+  width: 85%; }
   .carousel-item img {
-    height: 60vh; }
+    height: 65vh; }
 
 .principal__titulo-2 {
   display: flex;

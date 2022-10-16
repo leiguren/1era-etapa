@@ -1,10 +1,10 @@
 /* Main Index portada */
 
 .carousel {
-    width: 90%;
-    &-item img{
-        height: 60vh;
-    }
+      width: 85%;
+      &-item img{
+         height: 65vh;
+      }
 }
 .principal__titulo-2{
     @include flex (center);
